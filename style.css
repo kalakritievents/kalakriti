@@ -1113,7 +1113,7 @@ body {
     text-align: center;
   }
   .faq{
-    padding: 1px;
+    padding: 1px !important;
   }
 }
 
