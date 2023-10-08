@@ -1112,6 +1112,10 @@ body {
   .btn1 {
     text-align: center;
   }
+  .faq{
+        margin: 50px;
+    padding: 100px;
+  }
 }
 
 /* Media Query for Screens Smaller Than 720px */
@@ -1272,8 +1276,9 @@ body {
 
 
 
-
-
+.faq{
+        margin: 50px;
+  }
 
 
 
