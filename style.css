@@ -1382,49 +1382,71 @@ body {
 
 
 
-/* footer css */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer css */
 * {
   font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 section {
   width: 100%;
-  display: inline-block;
   background: #ccc;
   height: 60vh;
   text-align: center;
   font-size: 22px;
   font-weight: 700;
   text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-distributed {
-  background-color: #FDFCEA;
-  color: #000000;
+  background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
   width: 100%;
-  text-align: left;
+  text-align: center;
   font: normal 16px sans-serif;
-  padding: 45px 50px;
+  padding: 45px 0; /* Adjust padding for top and bottom */
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on small screens */
+  justify-content: space-between; /* Separate left and right content */
+  align-items: center;
 }
 
 .footer-distributed .footer-left p {
-  color: #000000;
+  color: #8f9296;
   font-size: 14px;
   margin: 0;
 }
+
 /* Footer links */
 
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
-  color: #000000;
-  margin: 0 0 10px;
+  color: #ffffff;
+  margin: 0;
   padding: 0;
   transition: ease .25s;
+  text-align: center;
 }
 
 .footer-distributed p.footer-links a {
@@ -1438,8 +1460,7 @@ section {
 .footer-distributed .footer-links a:before {
   content: "·";
   font-size: 20px;
-  left: 0;
-  color: #000000;
+  color: #fff;
   display: inline-block;
   padding-right: 5px;
 }
@@ -1449,40 +1470,42 @@ section {
 }
 
 .footer-distributed .footer-right {
-  float: right;
-  margin-top: 6px;
-  max-width: 180px;
+  margin-top: 20px; /* Adjust margin for spacing */
 }
 
 .footer-distributed .footer-right a {
   display: inline-block;
   width: 35px;
   height: 35px;
-  background-color: #FDFCEA;
-  border-radius: 2px;
+  background-color: #33383b;
+  border-radius: 50%;
   font-size: 20px;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   line-height: 35px;
-  margin-left: 3px;
-  transition:all .25s;
+  margin-left: 10px; /* Increase spacing between icons */
+  transition: all .25s;
 }
 
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+}
 
-.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
 
 /* Media Queries */
 
 @media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
-    text-align: center;
+  .footer-distributed {
+    flex-direction: column; /* Stack content vertically on small screens */
   }
+
+  .footer-distributed .footer-left,
   .footer-distributed .footer-right {
-    float: none;
+    text-align: center;
     margin: 0 auto 20px;
   }
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
 }
+
