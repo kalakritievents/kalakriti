@@ -49,14 +49,7 @@ body {
   height: 100px;
 }
 
-.card:nth-child(2) .card__image {
-  background-image: linear-gradient(to right top,
-      #dc09a5,
-      #ce00b4,
-      #ba00c5,
-      #9c00d8,
-      #6f12eb);
-}
+
 
 .card:nth-child(3) .card__image {
   background-image: linear-gradient(to right top,
