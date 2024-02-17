@@ -209,7 +209,7 @@
                 </a>
             </div>
             <div class="icon-block social-icon">
-                <button>T&C</button>
+                 <button class="tnc-button" onclick="openTerms()">T&C</button>
 
             </div>
             
@@ -226,6 +226,10 @@
   
 
   <script>
+    function openTerms() {
+      window.location.href = 'tnc.html';
+    }
+
     // Set the date we're counting down to
     var countDownDate = new Date("sept 30, 2023").getTime();
 
